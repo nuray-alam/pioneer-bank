@@ -1,4 +1,5 @@
 const loginButton = document.getElementById("login-button");
 loginButton.addEventListener("click", function () {
-  console.log("amak click korse");
+  const loginArea = document.getElementById('login-area');
+  loginArea.style.display = 'none';
 });
