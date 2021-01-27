@@ -19,3 +19,13 @@ depositButton.addEventListener("click", function () {
   updateSpanText(depositAmount, 'current-balance');
   document.getElementById('deposit-amount').value = '';
 });
+
+// Withdraw Button event handler
+
+const withdrawButton = document.getElementById('withdraw-button');
+withdrawButton.addEventListener('click', function () {
+  const withdrawAmount = parseFloat(document.getElementById('withdraw-amount').value);
+  updateSpanText(withdrawAmount, 'current-withdraw');
+  updateSpanText(-withdrawAmount, 'current-balance');
+  document.getElementById('withdraw-amount').value = '';
+});
