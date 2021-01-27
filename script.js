@@ -26,6 +26,6 @@ const withdrawButton = document.getElementById('withdraw-button');
 withdrawButton.addEventListener('click', function () {
   const withdrawAmount = parseFloat(document.getElementById('withdraw-amount').value);
   updateSpanText(withdrawAmount, 'current-withdraw');
-  updateSpanText(-withdrawAmount, 'current-balance');
+  updateSpanText(-1 * withdrawAmount, 'current-balance');
   document.getElementById('withdraw-amount').value = '';
 });
